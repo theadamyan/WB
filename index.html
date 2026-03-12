@@ -398,6 +398,23 @@
     border-color: #4361ee;
 }          
 
+/* Для ПК и планшетов в альбомной ориентации */
+@media (min-width: 768px) {
+    #how-it-works img {
+        width: 50% !important;  /* уменьшаем фото на 70% */
+        max-width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Для очень широких экранов */
+@media (min-width: 1400px) {
+    #how-it-works img {
+        width: 40% !important;
+        max-width: 40%;
+    }
+}
 
 
     </style>
@@ -441,41 +458,41 @@
 </section>
 
     <!-- ЭКРАН 2. Как это работает -->
-   <section class="screen" id="how-it-works">
+    <section class="screen" id="how-it-works">
     <div class="container">
         <h2 style="text-align: center; width: 100%;">Как это работает</h2>
         <p class="subhead" style="text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 30px;">
             Простой сценарий для вашего покупателя — максимум пользы
         </p>
         
-        <!-- Добавлено фото по центру -->
+        <!-- Фото с адаптивным размером -->
         <div style="text-align: center; margin-bottom: 40px;">
-            <img src="photo.jpg" alt="AR примерка мебели" style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <img src="photo.jpg" alt="AR примерка мебели" style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%;">
         </div>
 
         <div class="steps" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
             <div class="step-card" style="padding: 20px 20px 15px 20px; display: flex; flex-direction: column; min-height: auto;">
-                <div class="step-number" style="margin-left: 0; margin-right: auto; width: 36px; height: 36px; line-height: 36px; font-size: 1rem;">1</div>
-                <p style="margin: 10px 0 5px 0;"><strong>Открывает карточку</strong></p>
-                <div style="color:#5f6588; font-size: 0.9rem;">Видит кнопку «Посмотреть в AR»</div>
+                <div class="step-number" style="margin: 0 auto 15px auto; width: 44px; height: 44px; line-height: 44px; font-size: 1.2rem;">1</div>
+                <p style="margin: 0 0 8px 0;"><strong>Открывает карточку</strong></p>
+                <div style="color:#5f6588; font-size: 0.95rem;">Видит кнопку «Посмотреть в AR»</div>
             </div>
             
             <div class="step-card" style="padding: 20px 20px 15px 20px; display: flex; flex-direction: column; min-height: auto;">
-                <div class="step-number" style="margin-left: 0; margin-right: auto; width: 36px; height: 36px; line-height: 36px; font-size: 1rem;">2</div>
-                <p style="margin: 10px 0 5px 0;"><strong>Нажимает</strong></p>
-                <div style="color:#5f6588; font-size: 0.9rem;">Камера телефона показывает комнату</div>
+                <div class="step-number" style="margin: 0 auto 15px auto; width: 44px; height: 44px; line-height: 44px; font-size: 1.2rem;">2</div>
+                <p style="margin: 0 0 8px 0;"><strong>Нажимает</strong></p>
+                <div style="color:#5f6588; font-size: 0.95rem;">Камера телефона показывает комнату</div>
             </div>
             
             <div class="step-card" style="padding: 20px 20px 15px 20px; display: flex; flex-direction: column; min-height: auto;">
-                <div class="step-number" style="margin-left: 0; margin-right: auto; width: 36px; height: 36px; line-height: 36px; font-size: 1rem;">3</div>
-                <p style="margin: 10px 0 5px 0;"><strong>Мебель в реальном размере</strong></p>
-                <div style="color:#5f6588; font-size: 0.9rem;">Передвигает, оценивает масштаб</div>
+                <div class="step-number" style="margin: 0 auto 15px auto; width: 44px; height: 44px; line-height: 44px; font-size: 1.2rem;">3</div>
+                <p style="margin: 0 0 8px 0;"><strong>Мебель в реальном размере</strong></p>
+                <div style="color:#5f6588; font-size: 0.95rem;">Передвигает, оценивает масштаб</div>
             </div>
             
             <div class="step-card" style="padding: 20px 20px 15px 20px; display: flex; flex-direction: column; min-height: auto;">
-                <div class="step-number" style="margin-left: 0; margin-right: auto; width: 36px; height: 36px; line-height: 36px; font-size: 1rem;">4</div>
-                <p style="margin: 10px 0 5px 0;"><strong>Покупает</strong></p>
-                <div style="color:#5f6588; font-size: 0.9rem;">Решение принято, возвратов нет</div>
+                <div class="step-number" style="margin: 0 auto 15px auto; width: 44px; height: 44px; line-height: 44px; font-size: 1.2rem;">4</div>
+                <p style="margin: 0 0 8px 0;"><strong>Покупает</strong></p>
+                <div style="color:#5f6588; font-size: 0.95rem;">Решение принято, возвратов нет</div>
             </div>
         </div>
     </div>
